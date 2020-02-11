@@ -16,167 +16,82 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <i class="fas fa-hotdog"></i>
 
 
             <div class="nav-bar">
-                <a href="#" class="nav-item">Starters</a>
-                <a href="#" class="nav-item">Main</a>
-                <a href="#" class="nav-item">Desserts</a>
 
-                <a href="#" class="nav-item">Drinks</a>
+                <a href="#header" class="nav-item">Home</a>
+
             </div>
         </nav>
 
-
     </header>
+<aside class="aside">
+  <div class="aside-nav-bar">
 
+  </div>
+</aside>
     <main>
-        <section class="starter">
-           <h3>STARTERS</h3>
-<!--
-            <article class="dish-card">
-                <div class="card-header">
-                    <img class="dish-img" src="./imgs/small/caviarbruschetta-sm.jpg" alt="baltiskbondesuppe">
-                    <div class="features">
+      <h1>My Russion Resturant</h1>
 
 
-                    </div>
+      <div class="modal-background hide">
+        <div class="modal-content">
+          <img src="" alt="" class="modal-image" />
+          <div class="features">
+            <h3 class="modal-name">NAME</h3>
 
-                </div>
-                <h3><span class="dish-name">Caviar bruschetta</span></h3>
-                <div>
-                    <p> <span class="dish-desc">Brushcetta med russisk Caviar</span></p>
-                    <p>Price: <span class="price">49</span>kr</p>
-                    <p>Category: <span class="dish-category">Starter</span></p>
+              <img class="vegetarian-img" src="">
 
-                    <p> <span class="sold-out"></span></p>
-                    <p><span class="discount"></span></p>
+              <div class="soldout"><p>Sold out!</p></div>
 
-                    <p><span class="vegetarian"></span></p>
+          </div>
+          <p class="modal-description">LONG DESCRIPTION</p>
+        <div class="prices" style="display: flex; ">
 
-                </div>
-            </article>
--->
-        </section>
-        <section class="mains">
-                      <h3>MAIN</h3>
-
-<!--
-            <article class="dish-card">
-                <div class="card-header">
-                    <img class="dish-img" src="./imgs/small/dynryp-sm.jpg" alt="dynryp">
-                    <div class="features">
-                        <span class="vegetarian"><img src="https://img.icons8.com/ios-glyphs/30/000000/vegetarian-mark.png">
-                        </span>
-
-                    </div>
-
-                </div>
-                <h3><span class="dish-name">Dynryp</span></h3>
-                <div>
-                    <p> <span class="dish-desc">Dynrup - Russisk bulgur med skovsvampe</span></p>
-                    <p>Price: <span class="price">149</span>kr</p>
-                    <p>Category: <span class="dish-category">Main dish</span></p>
-
-                    <p><span class="sold-out"></span></p>
-                    <p> <span class="discount">-20</span>kr discount!</p>
-                    <p> <span class="vegetarian">Vegetarian</span></p>
-
-                </div>
-            </article>
--->
-        </section>
-        <section class="desserts">
-<!--
-                      <h3>DESERTS</h3>
-
-            <article id="myBtn" class="dish-card">
-                <div class="card-header">
-
-
-                    <img class="dish-img" src="./imgs/small/pavlova-sm.jpg" alt="pavlova">
-                    <div class="features">
-                        <span class="vegetarian"><img src="https://img.icons8.com/ios-glyphs/30/000000/vegetarian-mark.png">
-                        </span>
-                        <p> <span class="sold-out">Sold out</span></p>
-                    </div>
-
-
-                </div>
-                <h3><span class="dish-name">Pavlova with melon</span></h3>
-
-                <div>
-                    <p> <span class="dish-desc">Pavlova - russiske pandekager - i honningmelon fra Nordkorea</span></p>
-                    <p>Price: <span class="price">49</span>kr</p>
-                    <p>Category: <span class="dish-category">Dessert</span></p>
-
-                    <p> <span class="sold-out">Sold out</span></p>
-                    <p> <span class="discount">-40</span>kr</p>
-                    <p> <span class="vegetarian">Vegetarian</span></p>
-
-                </div>
-
-            </article>
--->
-        </section>
-
-
-
-        <div id="myModal" class="modal">
-
-             Modal content
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="card-header">
-                    <img src="./imgs/small/pavlova-sm.jpg" alt="pavlova">
-
-
-                </div>
-                <h2><span class="dish-name">Pavlova with melon</span></h2>
-
-                <div>
-                    <p> <span class="dish-desc">Pavlova - russiske pandekager - i honningmelon fra Nordkorea</span></p>
-                    <p>Price: <span class="price">49</span>kr</p>
-                    <p>Category: <span class="dish-category">Dessert</span></p>
-
-                </div>
-                <div class="features">
-                    <span class="vegetarian"><img src="https://img.icons8.com/ios-glyphs/30/000000/vegetarian-mark.png">
-                    </span>
-                    <p class="sold-out"> Sold out</p>
-                </div>
-            </div>
-
+          <h4 class="price-text">Price: <span class="price"></span>kr </h4>
+          <h4 class="discount-text">New price: <span class="discount"></span>kr</h4>
         </div>
-
+        </div>
+      </div>
     </main>
 
     <template>
         <article class="dish-card">
-                <div class="card-header">
-                    <img class="dish-img" src="" alt="">
-                    <div class="features">
+
+            <div class="card-header">
+
+                <img class="dish-img" src="" alt="">
 
 
-                    </div>
+            </div>
+            <div class="features">
+              <h4><span class="dish-name"></span></h4>
 
+                <img class="vegetarian-img" src="">
+
+
+            </div>
+
+            <div>
+                <p> <span class="dish-desc"></span></p>
+                <div class="prices" style="display: flex; ">
+                  <h6 class="price-text">Price: <span class="price"></span>kr</h6>
+
+                  <h6 class="discount-text">New price: <span class="discount"></span>kr</h6>
                 </div>
-                <h4><span  class="dish-name"></span></h4>
-                <div>
-                    <p> <span class="dish-desc"></span></p>
-                    <p>Price: <span class="price"></span>kr</p>
-                    <p>Category: <span class="dish-category"></span></p>
+                <div class="soldout"><p>Sold out!</p></div>
 
-                    <p> <span class="sold-out"></span></p>
-                    <p><span class="discount"></span></p>
 
-                    <p><span class="vegetarian"></span></p>
 
-                </div>
-            </article>
+            </div>
+
+
+
+        </article>
     </template>
     <footer>
 
